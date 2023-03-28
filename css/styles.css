@@ -1,0 +1,400 @@
+:root {
+    --color-accet:#FF6C00;
+    --color-text: #555555;
+    --color-titel-text: #303030;
+    --color-overtitel: rgba(157, 164, 189, 0.6);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.page {
+    color: var(--color-text);
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.2em;
+}
+
+.titel-h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.cotainer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding: 130px 55px;
+
+} 
+/*Heder*/
+.cotainer .heder-container {
+    display: flex;
+}
+
+.heder-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 32px;
+    margin-left: 54px;
+    margin-right: 70px;
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+    background-color: black;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.heder-container .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--color-accet);
+}
+
+.phone {
+    margin-left: auto;
+    margin-right: 40px;
+    color: #FFFFFF;
+    background-color: black;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.phone:hover,
+.phone:focus {
+    color: var(--color-accet);
+}
+
+
+/*Button*/
+
+.button {
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    min-width: 160px;
+
+    cursor: pointer;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+} 
+
+.button:hover,
+.button:focus {
+    color: #FFFFFF;
+    background-color: var(--color-accet);
+}
+
+.first-bnt {
+    color: #FFFFFF;;
+    background-color: black;
+    border: 1px solid var(--color-accet);
+}
+
+.secondar-btn {
+    color: #303030;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-accet);
+}
+
+/*Hero*/
+.hero-title {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    background-color: #303030;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+.hero-text {
+    color: #9DA4BD;
+}
+
+.overtitel {
+    margin-bottom: 20px;
+    color: var(--color-overtitel);
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.social-link {
+    color: #303030;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: var(--color-accet);
+}
+
+.sidebar {
+    outline: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-lr;
+    width: 153px;
+    height: 560px;
+    padding-left: 81px;
+}
+
+.sidebar .list {
+    outline: 1px solid tomato;
+    display: flex;
+    padding-top: 40px;
+    transform: rotate(180deg);
+}
+
+.hero-right-side {
+    padding-top: 184px;
+    padding-left: 98px;
+}
+
+.hero > .cotainer {
+    display: flex;
+}
+
+.hero .item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.sidebar > .list {
+    padding-bottom: 40px;
+}
+/*About*/
+.about .section,
+.about .list {
+    display: flex;
+}
+
+.about .item + .item {
+    margin-left: 30px;
+}
+
+.about-box {
+    width: 500px;
+    margin-left: 64px;
+}
+
+.about-titel {
+    margin-bottom: 20px;
+
+    color: var(--color-titel-text);
+}
+
+.about-text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/*Services and prices*/
+.services {
+    background: black;
+}
+
+.services-titel {
+    margin-top: 20px;
+    margin-bottom: 44px;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.services-card {
+    display: flex;
+    margin-bottom: 50px;
+}
+.card-one {
+    padding: 30px 40px;
+    width: 585px;
+    border: 1px solid #171A24;
+}
+
+.card-one .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-two {
+    padding: 30px 40px;
+    width: 585px;
+    border: 1px solid #090B13;
+}
+
+.card-two .item {
+    display: flex;
+    justify-content:space-between;
+}
+
+.services .button {
+    display: block;
+    margin: auto;
+}
+
+/*Advantages*/
+
+
+.advant-titel {
+    margin-bottom: 20px;
+    color: var(--color-titel-text);
+}
+
+.advant-span {
+    color: var(--color-titel-text);
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+}
+
+.advant-text {
+    color: #303030;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+}
+
+.advant .cotainer {
+    display: flex;
+}
+
+.advant-box {
+    width: 500px;
+    margin-left: 130px;
+}
+
+.advant-card {padding-left: 100px;
+    display: flex;
+    width: 170px;
+    height: 133px;
+    background-color: #F7F7F7;
+}
+
+/*Our barbers*/
+
+.our-titel {
+    color: var(--color-titel-text);
+}
+.barber-titel {
+    color: var(--color-titel-text);
+    
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+}
+
+.our-text {
+    color: var(--color-accet);
+    
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+}
+
+/*Portfolio*/
+
+/*Adress*/
+
+.adress-titel {
+    color: #FFFFFF;
+    background-color: black;
+    font-style: normal;
+}
+
+.adress-text {
+    color: #9DA4BD;
+    font-style: normal;
+}
+
+.clock-titel{
+    color: #FFFFFF;
+    background-color: black;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.clock-text {
+    color: #9DA4BD;
+}
+/*Footer*/
+
+.footer-text {
+    color: #9DA4BD;
+}
