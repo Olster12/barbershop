@@ -21,10 +21,13 @@
     <!--Header-->
     <header class="cotainer">
         <div class="heder-container">
+            
             <nav class="nav-list">
-                 <a class="logo" href="./index.html">
-                    <img src="./img/logo.svg" alt="logo site">
-                </a>
+                <a href="./index.html">
+                <svg class="logo" width="68" height="55">
+                    <use xlink:href="./img/sprit.svg#icon-logo"></use>
+                </svg>
+            </a>
                 <ul class="list nav-list">
                     <li class="item">
                         <a class="link nav-list" href="#about">Про НАС</a>
@@ -42,8 +45,7 @@
             </nav>
 
             <a class="link phone" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="button first-bnt" type="button">ОНЛАЙН-ЗАПИС</button>
-
+            <button class="button secondar-btn" type="button">ОНЛАЙН-ЗАПИС</button>
         </div>
     </header>
 
@@ -143,22 +145,30 @@
         <section class="advant">
             <div class="cotainer section">
                 <ul class="list">
-                    <li slass="item advant-car">
-                        <span class="advant-span">600</span>
-                        <p class="advant-text">Задоволених клієнтів за день</p>
-                    </li>
-                    <li slass="item advant-car">
-                        <span class="advant-span">50</span>
-                        <p class="advant-text">Нагороди за відмінне обслуговування</p>
-                    </li>
-                    <li slass="item advant-car">
-                        <span class="advant-span">20</span>
-                        <p class="advant-text">Найкращих перукарів Києва</p>
-                    </li>
-                    <li slass="item advant-car">
-                        <span class="advant-span">100</span>
-                        <p class="advant-text">Подарунків постійним клієнтам</p>
-                    </li>
+                    <div class="advant-card">
+                        <li slass="item">
+                            <span class="advant-span">600</span>
+                            <p class="advant-text">Задоволених клієнтів за день</p>
+                        </li>
+                    </div>
+                    <div class="advant-card">
+                        <li slass="item">
+                            <span class="advant-span">50</span>
+                            <p class="advant-text">Нагород за відмінне обслуговування</p>
+                        </li>
+                    </div>
+                    <div class="advant-card">
+                        <li slass="item">
+                            <span class="advant-span">20</span>
+                            <p class="advant-text">Найкращих перукарів Києва</p>
+                        </li>
+                    </div>
+                    <div class="advant-card">
+                        <li slass="item">
+                            <span class="advant-span">100</span>
+                            <p class="advant-text">Подарунків постійним клієнтам</p>
+                        </li>
+                    </div>
                 </ul>
                 <div class="advant-box">
                     <p class="overtitel">Cтара традиційна школа</p>
@@ -170,89 +180,189 @@
         </section>
 
         <!--Our barbers-->
-        <section id="barbers">
-            <div class="cotainer">
+        <section id="barbers" class="barber">
+            <div class="cotainer section">
                 <p class="overtitel">Для справжніх поціновувачів атмосфери</p>
+                <h2 class="titel-h2 our-titel">Наші перукарі</h2>
                 <ul class="list">
-                    <h2 class="titel-h2 our-titel">Наші перукарі</h2>
-                    <li>
+                    <li class="item">
                         <img src="./img/john-smith.jpg" alt="мастер Джон Сміт стриже клієнта">
-                        <h3 class="barber-titel" lang="en">John Smith</h3>
-                        <p class="our-text" lang="en">Extreme Barber</p>
+                        <div class="barber-card">
+                            <h3 class="barber-titel" lang="en">John Smith</h3>
+                            <p class="our-text" lang="en">Extreme Barber</p>
+                            <ul class="social-list list ">
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="./img/michele-doe.jpg" alt="майстер Мішель Дуе стриже клієнта">
-                        <h3 class="barber-titel" lang="en">Michele Doe</h3>
-                        <p class="our-text" lang="en">Extreme Barber</p>
+                        <div class="barber-card">
+                            <h3 class="barber-titel" lang="en">Michele Doe</h3>
+                            <p class="our-text" lang="en">Extreme Barber</p>
+                            <ul class="social-list list ">
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="./img/alan-black.jpg" alt="майстер Алан Чорний стриже клієнта">
-                        <h3 class="barber-titel" lang="en">Alan Black</h3>
-                        <p class="our-text" lang="en">Extreme Barber</p>
+                        <div class="barber-card">
+                            <h3 class="barber-titel" lang="en">Alan Black</h3>
+                            <p class="our-text" lang="en">Extreme Barber</p>
+                            <ul class="social-list list ">
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social-link-list link" href="">
+                                        <svg class="social-list-icons" width="20px" hieght="20px">
+                                            <use href="./img/sprit.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!--Portfolio-->
-        <section>
-            <div class="cotainer">
+        <section class="portfolio">
+            <div class="cotainer section">
                 <h2 hidden>Галерея</h2>
-                <p class="overtitel">на латиській мові «барбер» означає «борода».</p>
+                <p class="overtitel">на латинській мові «барбер» означає «борода».</p>
                 <ul class="list">
-                    <li>
+                    <li class="item">
                         <img src="./img/rectangle-1.jpg" alt="барбер стриже клієнта машинкою">
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="./img/rectangle-2.jpg" alt="барбер голить клієнта">
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="./img/rectangle-3.jpg" alt="барбер віпарює обличчя клієнту">
                     </li>
-                    <li>
-                        <img src="./img/rectangle-4.jpg" alt="барбер бриє клієнта бритвою">
+                    <li class="item">
+                        <img class="item" src="./img/rectangle-4.jpg" alt="барбер бриє клієнта бритвою">
                     </li>
                 </ul>
             </div>
         </section>
 
         <!--Adress-->
-        <section id="adress">
+        <section id="adress" class="adress">
             <div class="cotainer">
-                <h2 class="titel-h2 adress-titel">Олайн-запис</h2>
-                <button class="button first-bnt">Надіслати</button>
-                <address>
-                    <h2 class="titel-h2 adress-titel">Контакти</h2>
-                    <ul class="list">
-                        <li>
-                            <a class="link adress-text" href="https://goo.gl/maps/aWsYvWRfGqt2dp8g8" target="_blank"
-                                rel=" noopener noreferrer">вул.
-                                Василькова, 7А
-                                Київ, 08132</a>
-                        </li>
-                        <li>
-                            <a class="link adress-text" href="tel:+380441111111">+38 044 111 11 11</a>
-                        </li>
-                        <li>
-                            <a class="link adress-text" href="emalto:barbershop@email.com">barbershop@email.com</a>
-                        </li>
-                    </ul>
-                </address>
-                <h3 class="clock-titel">Робочі години</h3>
-                <p class="clock-text">Щодня з 9:00 до 22:00</p>
+                <div class="item">
+                    <h2 class="titel-h2 adress-titel">Олайн-запис</h2>
+                    <button class="button first-bnt">Надіслати</button>
+                </div>
+                <div class="item adress-contact">
+                    <address>
+                        <h2 class="titel-h2 adress-titel">Контакти</h2>
+                        <ul class="list">
+                            <li>
+                                <a class="link adress-text" href="https://goo.gl/maps/aWsYvWRfGqt2dp8g8" target="_blank"
+                                    rel=" noopener noreferrer">вул.
+                                    Василькова, 7А <br>
+                                    Київ, 08132</a>
+                            </li>
+                            <li>
+                                <a class="link adress-text" href="tel:+380441111111">+38 044 111 11 11</a>
+                            </li>
+                            <li>
+                                <a class="link adress-text" href="emalto:barbershop@email.com">barbershop@email.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <h3 class="clock-titel">Робочі години</h3>
+                    <p class="clock-text">Щодня з 9:00 до 22:00</p>
+                </div>
             </div>
         </section>
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="footer">
         <div class="cotainer">
             <p class="footer-text">&#169; Copyright 2020</p>
             <ul class="list">
-                <li>
+                <li class="item">
                     <a class="social-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </li>
-                <li>
+                <li class="item">
                     <a class="social-link link" href="" target="_parent" rel="noopener noreferrer">Youtube</a>
                 </li>
             </ul>
